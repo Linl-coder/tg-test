@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400&display=swap');
+
+* {
+	/* font-family: 'Lora', serif; */
+	/* font-family: 'Open Sans', sans-serif; */
+	font-family: 'Libre Franklin', sans-serif;
+	text-decoration: none;
+	list-style: none;
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+
+
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.color_w {
+	color: #fff;
+}
+
+.bg_w {
+	background: #fff;
+}

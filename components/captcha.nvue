@@ -1,0 +1,43 @@
+<template>
+	<view v-if="showRecharge">
+		<web-view src="/hybrid/html/index.html" @message="message"></web-view>
+	</view>
+</template>
+
+<script>
+	export default {
+		data() {
+			return {
+				showRecharge: false,
+			}
+		},
+		props: {
+			mobile: {
+				type: String,
+				default: ''
+			},
+			},
+		methods: {
+			message(e) {
+				if (e.detail.data[0].action.ret == 0) {
+					this.$emit('message', e.detail.data[0].action)
+				}
+				this.showRecharge = false;
+			},
+			async open() {
+				// #ifdef APP-PLUS
+				this.showRecharge = true;
+				// #endif
+
+				// #ifdef H5
+				await uni.utils.is_phone(this.mobile, '请输入手机号')
+				let captcha = new TencentCaptcha('195041869', (res) => {
+					if (res.ret === 0) this.$emit('message', res)
+				})
+
+				captcha.show()
+				// #endif
+			}
+		}
+	}
+</script>

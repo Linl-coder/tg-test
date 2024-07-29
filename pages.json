@@ -1,0 +1,1449 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [
+		// // #ifdef APP-PLUS
+		// {
+		// 	"path": "pages/game/capsuleToys/capsuleToys",
+		// 	"style": {
+		// 		"navigationBarTitleText": "JJCHUB",
+		// 		"enablePullDownRefresh": false,
+		// 		"app-plus": {
+		// 			"titleNView": false
+		// 		}
+		// 	}
+		// },
+		// // #endif 
+		// // #ifdef H5
+		// {
+		// 	"path": "pages/gather/homepage",
+		// 	"style": {
+		// 		"navigationBarTitleText": "JJCHUB",
+		// 		"navigationStyle": "custom",
+		// 		"enablePullDownRefresh": false
+		// 	}
+		// },
+		// // #endif 
+		{
+			"path": "pages/gather/homepage",
+			"style": {
+				"navigationBarTitleText": "JJCHUB ",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/general/login/index",
+			"style": {
+				"navigationBarTitleText": "JJCHUB",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/game/capsuleToys/capsuleToys",
+			"style": {
+				"navigationBarTitleText": "JJCHUB",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+
+		{
+			"path": "pages/gather/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/discover/index",
+			"style": {
+				"navigationBarTitleText": "发现",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/gather/collect/mycollect",
+			"style": {
+				"navigationBarTitleText": "我的卡牌",
+				"navigationStyle": "default",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/gather/collect/regift",
+			"style": {
+				"navigationBarTitleText": "历史记录",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/gather/collect/author",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/gather/collect/brandList",
+			"style": {
+				"navigationBarTitleText": "品牌列表",
+				"navigationBarBackgroundColor": "#f5f5f5"
+			}
+		},
+		{
+			"path": "pages/gather/collect/brand",
+			"style": {
+				"navigationBarTitleText": "品牌方",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/gather/collect/correlation",
+			"style": {
+				"navigationBarTitleText": "我的卡牌",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/gather/collect/consignment",
+			"style": {
+				"navigationBarTitleText": "寄售",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/gather/order/orderlist",
+			"style": {
+				"navigationBarTitleText": "我的订单",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/gather/order/orderListNew",
+			"style": {
+				"navigationBarTitleText": "JJCHUB",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/gather/order/orderdetails",
+			"style": {
+				"navigationBarTitleText": "订单详情",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/gather/collect/deatils",
+			"style": {
+				"navigationBarTitleText": "卡牌详情",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/gather/collect/drawdeatils",
+			"style": {
+				"navigationBarTitleText": "卡牌详情",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/gather/collect/mydetails",
+			"style": {
+				"navigationBarTitleText": "卡牌详情",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/gather/synthesis/synthesisdetails",
+			"style": {
+				"navigationBarTitleText": "合成详情",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/gather/synthesis/car",
+			"style": {
+				"navigationBarTitleText": "选择合成",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/gather/giving",
+			"style": {
+				"navigationBarTitleText": "转赠",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/gather/synthesis/synthesishistory",
+			"style": {
+				"navigationBarTitleText": "合成记录",
+				"navigationStyle": "default"
+			}
+		},
+		//已删除
+		// {
+		// 	"path": "pages/gather/wallet/index",
+		// 	"style": {
+		// 		"navigationBarTitleText": "我的岛晶",
+		// 		"navigationStyle": "custom"
+		// 	}
+		// },
+		// {
+		// 	"path": "pages/gather/wallet/web",
+		// 	"style": {
+		// 		"navigationBarTitleText": "我的钱包",
+		// 		"navigationStyle": "default"
+		// 	}
+		// },
+		// {
+		// 	"path": "pages/gather/wallet/success",
+		// 	"style": {
+		// 		"navigationBarTitleText": "支付结果",
+		// 		"navigationStyle": "custom"
+		// 	}
+		// },
+		// {
+		// 	"path": "pages/gather/wallet/wallet",
+		// 	"style": {
+		// 		"navigationBarTitleText": "我的钱包",
+		// 		"navigationStyle": "default"
+		// 	}
+		// },
+		// {
+		// 	"path": "pages/gather/wallet/balance",
+		// 	"style": {
+		// 		"navigationBarTitleText": "我的钱包",
+		// 		"navigationStyle": "default"
+		// 	}
+		// },
+		// {
+		// 	"path": "pages/gather/wallet/collectpay",
+		// 	"style": {
+		// 		"navigationBarTitleText": "订单支付",
+		// 		"navigationStyle": "default"
+		// 	}
+		// },
+		{
+			"path": "pages/gather/synthesis/index",
+			"style": {
+				"navigationBarTitleText": "合成活动",
+				"navigationStyle": "default",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置
+							{
+								"text": "合成记录",
+								"float": "right",
+								"fontSize": "30rpx",
+								"width": "auto",
+								"color": "#6B9AFF"
+							}
+						]
+					}
+				}
+			}
+		},
+		/**
+		 * 卡牌盲盒
+		 */
+		{
+			"path": "pages/gather/blindbox/index",
+			"style": {
+				"navigationBarTitleText": "盲盒",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/gather/blindbox/details",
+			"style": {
+				"navigationBarTitleText": "盲盒",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/gather/blindbox/mydetails",
+			"style": {
+				"navigationBarTitleText": "盲盒",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/gather/blindbox/boxHistory",
+			"style": {
+				"navigationBarTitleText": "开盒记录",
+				"navigationStyle": "default"
+			}
+		},
+		/**
+		 * 卡牌市场 已删除
+		 */
+		// {
+		// 	"path": "pages/gather/market/index",
+		// 	"style": {
+		// 		"navigationBarTitleText": "市场",
+		// 		"navigationStyle": "custom",
+		// 		"enablePullDownRefresh": true
+		// 	}
+		// },
+		// {
+		// 	"path": "pages/gather/market/predetails",
+		// 	"style": {
+		// 		"navigationBarTitleText": "市场",
+		// 		"navigationStyle": "custom",
+		// 		"navigationBarTextStyle": "white",
+		// 		"enablePullDownRefresh": true
+		// 	}
+		// },
+		// {
+		// 	"path": "pages/gather/market/details",
+		// 	"style": {
+		// 		"navigationBarTitleText": "市场",
+		// 		"navigationStyle": "custom"
+		// 	}
+		// },
+		// {
+		// 	"path": "pages/gather/market/markethistory",
+		// 	"style": {
+		// 		"navigationBarTitleText": "流转信息",
+		// 		"navigationStyle": "default"
+		// 	}
+		// },
+		// {
+		// 	"path": "pages/gather/market/predetailBox",
+		// 	"style": {
+		// 		"navigationBarTitleText": "",
+		// 		"navigationStyle": "custom"
+		// 	}
+		// },
+		{
+			"path": "pages/gather/home/index",
+			"style": {
+				"navigationBarTitleText": "JJCHUB ",
+				"navigationStyle": "custom"
+			}
+		},
+		/**
+		 * 在线商城
+		 */
+		{
+			"path": "pages/market/index",
+			"style": {
+				"navigationBarTitleText": "商城",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": true
+			}
+		},
+		// 删除
+		// {
+		// 	"path": "pages/market/car",
+		// 	"style": {
+		// 		"navigationBarTitleText": "购物车",
+		// 		"navigationStyle": "custom",
+		// 		"enablePullDownRefresh": true
+		// 	}
+		// },
+		// 删除
+		// {
+		// 	"path": "pages/market/onlineshop/index",
+		// 	"style": {
+		// 		"navigationBarTitleText": "在线商城",
+		// 		"navigationStyle": "custom",
+		// 		"enablePullDownRefresh": true
+		// 	}
+		// },
+		// {
+		// 	"path": "pages/market/onlineshop/shoplist",
+		// 	"style": {
+		// 		"navigationBarTitleText": "在线商城",
+		// 		"navigationStyle": "default"
+		// 	}
+		// },
+		// {
+		// 	"path": "pages/market/onlineshop/details",
+		// 	"style": {
+		// 		"navigationBarTitleText": "在线商城",
+		// 		"navigationStyle": "custom"
+		// 	}
+		// },
+		// {
+		// 	"path": "pages/market/onlineshop/createorder",
+		// 	"style": {
+		// 		"navigationBarTitleText": "创建订单",
+		// 		"navigationStyle": "default"
+		// 	}
+		// },
+		{
+			"path": "pages/market/address",
+			"style": {
+				"navigationBarTitleText": "收货地址",
+				"navigationStyle": "default"
+				// "app-plus": {
+				// 	"titleNView": {
+				// 		"buttons": [ //原生标题栏按钮配置
+				// 			{
+				// 				"text": "新增地址",
+				// 				"float": "right",
+				// 				"fontSize": "30rpx",
+				// 				"width": "auto"
+				// 			}
+				// 		]
+				// 	}
+				// }
+			}
+		},
+		{
+			"path": "pages/market/edit_address",
+			"style": {
+				"navigationBarTitleText": "编辑地址",
+				"navigationStyle": "default"
+			}
+		},
+		// 删除
+		// {
+		// 	"path": "pages/market/shoppay",
+		// 	"style": {
+		// 		"navigationBarTitleText": "订单支付",
+		// 		"navigationStyle": "default"
+		// 	}
+		// },
+		/**
+		 * 兑换商城  已删除
+		 */
+		// {
+		// 	"path": "pages/market/exchangeshop/index",
+		// 	"style": {
+		// 		"navigationBarTitleText": "兑换商城",
+		// 		"navigationStyle": "custom",
+		// 		"enablePullDownRefresh": true
+		// 	}
+		// },
+		// {
+		// 	"path": "pages/market/exchangeshop/rule",
+		// 	"style": {
+		// 		"navigationBarTitleText": "兑换规则",
+		// 		"navigationStyle": "default"
+		// 	}
+		// },
+		// {
+		// 	"path": "pages/market/exchangeshop/details",
+		// 	"style": {
+		// 		"navigationBarTitleText": "兑换商城",
+		// 		"navigationStyle": "custom"
+		// 	}
+		// },
+		// {
+		// 	"path": "pages/market/exchangeshop/history",
+		// 	"style": {
+		// 		"navigationBarTitleText": "兑换记录",
+		// 		"navigationStyle": "default"
+		// 	}
+		// },
+		// {
+		// 	"path": "pages/market/exchangeshop/createorder",
+		// 	"style": {
+		// 		"navigationBarTitleText": "创建订单",
+		// 		"navigationStyle": "default"
+		// 	}
+		// },
+		/** 
+		 * 社区  
+		 */
+		{
+			"path": "pages/society/index",
+			"style": {
+				"navigationBarTitleText": "社区",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/society/deatils",
+			"style": {
+				"navigationBarTitleText": "动态详情",
+				"navigationStyle": "default",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置
+							{
+								"text": "• • •",
+								"float": "right",
+								"fontSize": "30rpx",
+								"width": "auto"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/society/release",
+			"style": {
+				"navigationBarTitleText": "社区",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/society/vote",
+			"style": {
+				"navigationBarTitleText": "编辑投票",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/society/attention",
+			"style": {
+				"navigationBarTitleText": "关注",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/society/vermicelli",
+			"style": {
+				"navigationBarTitleText": "粉丝",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/society/dynamic",
+			"style": {
+				"navigationBarTitleText": "我的动态",
+				"navigationStyle": "default"
+			}
+		},
+		/**
+		 * 盲盒 已删除
+		 */
+		// {
+		// 	"path": "pages/blindbox/index",
+		// 	"style": {
+		// 		"navigationBarTitleText": "欧气盲盒",
+		// 		"navigationStyle": "default"
+		// 	}
+		// },
+		// {
+		// 	"path": "pages/blindbox/home/index",
+		// 	"style": {
+		// 		"navigationBarTitleText": "我的",
+		// 		"navigationStyle": "default"
+		// 	}
+		// },
+		/**
+		 * 公共代码
+		 */
+		{
+			"path": "pages/general/Refuterumors/index",
+			"style": {
+				"navigationBarTitleText": "辟谣墙",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/general/Refuterumors/addRefuterumors",
+			"style": {
+				"navigationBarTitleText": "我要提问",
+				"navigationStyle": "default"
+			}
+		},
+		//删除
+		// {
+		// 	"path": "pages/general/phb/index",
+		// 	"style": {
+		// 		"navigationBarTitleText": "排行榜",
+		// 		"navigationStyle": "custom"
+		// 	}
+		// },
+		//删除
+		// {
+		// 	"path": "pages/general/defense/index",
+		// 	"style": {
+		// 		"navigationBarTitleText": "验证",
+		// 		"navigationStyle": "default"
+		// 	}
+		// },
+		{
+			"path": "pages/general/sign/index",
+			"style": {
+				"navigationBarTitleText": "签到",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/general/web/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"app-plus": {
+					"popGesture": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/general/web/wechat_web",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/general/article/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/general/kefu/index",
+			"style": {
+				"navigationBarTitleText": "客服",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/general/feedback/feedback_list",
+			"style": {
+				"navigationBarTitleText": "反馈记录",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/general/feedback/index",
+			"style": {
+				"navigationBarTitleText": "用户反馈",
+				"navigationStyle": "default",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置
+							{
+								"text": "反馈记录",
+								"float": "right",
+								"fontSize": "30rpx",
+								"width": "auto"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/general/userinfo/setpwd",
+			"style": {
+				"navigationBarTitleText": "设置密码",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/general/userinfo/msg_center",
+			"style": {
+				"navigationBarTitleText": "消息中心",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/general/userinfo/announcement",
+			"style": {
+				"navigationBarTitleText": "平台公告",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/general/userinfo/announce_detail",
+			"style": {
+				"navigationBarTitleText": "公告详情",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/general/userinfo/activities",
+			"style": {
+				"navigationBarTitleText": "运营活动",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/general/userinfo/active_detail",
+			"style": {
+				"navigationBarTitleText": "活动详情",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/general/userinfo/accountsSecurity",
+			"style": {
+				"navigationBarTitleText": "账号安全",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/general/userinfo/authSuccess",
+			"style": {
+				"navigationBarTitleText": "实名认证",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/general/userinfo/certification",
+			"style": {
+				"navigationBarTitleText": "实名认证",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/general/userinfo/setuserinfo",
+			"style": {
+				"navigationBarTitleText": "设置昵称",
+				"navigationStyle": "default"
+			}
+		},
+		//删除
+		// {
+		// 	"path": "pages/general/Privacy/index",
+		// 	"style": {
+		// 		"navigationBarTitleText": "隐私设置",
+		// 		"navigationStyle": "default"
+		// 	}
+		// },
+		{
+			"path": "pages/general/userinfo/index",
+			"style": {
+				"navigationBarTitleText": "个人信息",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/general/downapp/index",
+			"style": {
+				"navigationBarTitleText": "下载APP",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/general/invite/index",
+			"style": {
+				"navigationBarTitleText": "邀请好友",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/general/pagecode/index",
+			"style": {
+				"navigationBarTitleText": "群二维码",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/general/message/index",
+			"style": {
+				"navigationBarTitleText": "官方公告",
+				"navigationStyle": "custom",
+				"navigationBarBackgroundColor": "#F7F8FA"
+			}
+		},
+		{
+			"path": "pages/general/message/details",
+			"style": {
+				"navigationBarTitleText": "详情",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/general/serach/index",
+			"style": {
+				"navigationBarTitleText": "搜索",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/general/serach/serach_list",
+			"style": {
+				"navigationBarTitleText": "搜索",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/general/activity/index",
+			"style": {
+				"navigationBarTitleText": "活动",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/general/activity/details",
+			"style": {
+				"navigationBarTitleText": "活动详情",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/general/activity/voteDetails",
+			"style": {
+				"navigationBarTitleText": "投票",
+				"navigationStyle": "default"
+			}
+		},
+		//删除
+		// {
+		// 	"path": "pages/general/Luckydraw/index",
+		// 	"style": {
+		// 		"navigationBarTitleText": "抽奖",
+		// 		"navigationStyle": "custom"
+		// 	}
+		// },
+		// {
+		// 	"path": "pages/general/Luckydraw/catch",
+		// 	"style": {
+		// 		"navigationBarTitleText": "抽奖",
+		// 		"navigationStyle": "custom"
+		// 	}
+		// },
+		// {
+		// 	"path": "pages/general/Luckydraw/catch_rule",
+		// 	"style": {
+		// 		"navigationBarTitleText": "抽奖规则",
+		// 		"navigationStyle": "default"
+		// 	}
+		// },
+		// {
+		// 	"path": "pages/general/Luckydraw/lottery_history",
+		// 	"style": {
+		// 		"navigationBarTitleText": "抽奖",
+		// 		"navigationStyle": "default"
+		// 	}
+		// },
+
+		{
+			"path": "pages/general/register/index",
+			"style": {
+				"navigationBarTitleText": "JJCHUB",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/general/forget/index",
+			"style": {
+				"navigationBarTitleText": "JJCHUB",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/gather/mainland/index",
+			"style": {
+				"navigationBarTitleText": "JJCHUB",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+
+		},
+		{
+			"path": "pages/gather/mainland/shop_manager_item",
+			"style": {
+				"navigationBarTitleText": "全部店长",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "default"
+			}
+
+		},
+		{
+			"path": "pages/gather/mainland/reclaimedLand/reclaimedLand",
+			"style": {
+				"navigationBarTitleText": "开垦新矿场",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/gather/mainland/rankingList/rankingList",
+			"style": {
+				"navigationBarTitleText": "宝石排行榜",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/gather/mainland/myAssets/myAssets",
+			"style": {
+				"navigationBarTitleText": "我的宝石",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/gather/mainland/sendOut/sendOut",
+			"style": {
+				"navigationBarTitleText": "宝石赠送",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/gather/mainland/rankingList/setmessage",
+			"style": {
+				"navigationBarTitleText": "设置社交信息",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/gather/association/index",
+			"style": {
+				"navigationBarTitleText": "公会",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#F5F5F5",
+				"navigationBarTextStyle": "black",
+				"navigationStyle": "default"
+				// //#ifdef APP-PLUS
+				// "navigationStyle": "default",
+				// //#endif
+
+				// //#ifdef H5
+				// "navigationStyle": "custom"
+				// //#endif
+			}
+
+		},
+
+		{
+			"path": "pages/gather/association/myGuild/myGuild",
+			"style": {
+				"navigationBarTitleText": "JJCHUB ",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "white",
+				"navigationBarTextStyle": "black"
+					//#ifdef H5			
+					,
+				"navigationStyle": "custom"
+				//#endif
+			}
+
+		},
+
+		{
+			"path": "pages/general/invite/share",
+			"style": {
+				"navigationBarTitleText": "分享邀请",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+
+		},
+		{
+			"path": "pages/general/invite/myFriend2_progress",
+			"style": {
+				"navigationBarTitleText": "下一级开启条件",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#f5f5f5"
+			}
+
+		},
+		{
+			"path": "pages/general/invite/myFriend_all",
+			"style": {
+				"navigationBarTitleText": "我的挖矿队友",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#f5f5f5"
+			}
+
+		},
+		{
+			"path": "pages/general/invite/myFriend2",
+			"style": {
+				"navigationBarTitleText": "挖矿1队队友",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#f5f5f5"
+			}
+
+		},
+		{
+			"path": "pages/general/invite/myFriend",
+			"style": {
+				"navigationBarTitleText": "我的好友",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#f5f5f5"
+			}
+
+		},
+		{
+			"path": "pages/market/order/list",
+			"style": {
+				"navigationBarTitleText": "实体订单",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+
+		},
+		{
+			"path": "pages/market/order/order_detail",
+			"style": {
+				"navigationBarTitleText": "订单详情",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/gather/mainland/sendOut/sendOutRecord",
+			"style": {
+				"navigationBarTitleText": "转赠记录",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#f5f5f5"
+			}
+
+		}, {
+			"path": "pages/gather/association/myAssociation/myAssociation",
+			"style": {
+				"navigationBarTitleText": "我的公会",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#F4F4F4",
+				"navigationBarTextStyle": "black",
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/general/invite/poster",
+			"style": {
+				"navigationBarTitleText": "分享至",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#161616",
+				"navigationBarTextStyle": "white"
+			}
+
+		}, {
+			"path": "pages/general/invite/download",
+			"style": {
+				"navigationBarTitleText": "下载页面",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#f5f5f5",
+				"navigationBarTextStyle": "black"
+			}
+
+		}, {
+			"path": "pages/gather/mainland/myAssets/record",
+			"style": {
+				"navigationBarTitleText": "宝石记录",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#f5f5f5"
+			}
+
+		}, {
+			"path": "pages/gather/association/create/create",
+			"style": {
+				"navigationBarTitleText": "创建公会",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#F4F4F4",
+				"navigationBarTextStyle": "black"
+			}
+
+		}, {
+			"path": "pages/gather/association/warehouse/warehouse",
+			"style": {
+				"navigationBarTitleText": "公会仓库",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#F4F4F4",
+				"navigationBarTextStyle": "black",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"color": "#000",
+							"text": "记录",
+							"fontSize": "14"
+
+						}]
+					}
+				}
+			}
+
+		}, {
+			"path": "pages/gather/mainland/fuben/fuben",
+			"style": {
+				"navigationBarTitleText": "副本",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/gather/association/warehouse/giv_card",
+			"style": {
+				"navigationBarTitleText": "赠送",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#fff",
+				"navigationBarTextStyle": "black",
+				"navigationStyle": "custom"
+			}
+
+		},
+		{
+			"path": "pages/gather/association/warehouse/record",
+			"style": {
+				"navigationBarTitleText": "赠送记录",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		// {
+		// 	"path": "pages/game/game",
+		// 	"style": {
+		// 		"navigationBarTitleText": "",
+		// 		"enablePullDownRefresh": false,
+		// 		"navigationStyle": "custom"
+		// 	}
+
+		// },
+		{
+			"path": "pages/gather/association/starStory",
+			"style": {
+				"navigationBarTitleText": "星球背景",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/gather/association/gemProduct",
+			"style": {
+				"navigationBarTitleText": "宝石产能",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/gather/association/myGuild/myGuild",
+			"style": {
+				"navigationBarTitleText": "JJCHUB",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/gather/scrollTopTab/scrollTopTab",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/gather/goodDetails/goodDetails",
+			"style": {
+				"navigationBarTitleText": "商品详情",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/gather/confirmOrder/confirmOrder",
+			"style": {
+				"navigationBarTitleText": "确认订单",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/gather/storeManage/storeManage",
+			"style": {
+				"navigationBarTitleText": "店长中心",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/general/langSelect/langSelect",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/gather/mainland/blindBox_wait",
+			"style": {
+				"navigationBarTitleText": " ",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#0E0E0E",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/gather/mainland/playMethod_introdu/playMethod_introdu",
+			"style": {
+				"navigationBarTitleText": "玩法介绍",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#1D212A",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/gather/mainland/initial_intro/initial_intro",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#1D212A",
+				"navigationBarTextStyle": "white",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/gather/association/brandDetails/brandDetails",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "default",
+				"navigationBarBackgroundColor": "rgba(0, 0, 0, 0)"
+			}
+		},
+		{
+			"path": "pages/gather/bankInfo/bankInfo",
+			"style": {
+				"navigationBarTitleText": "JJCHUB",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/gather/ProxyApplica/ProxyApplica",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "代理申请",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/gather/setProxy/setProxy",
+			"style": {
+				"navigationStyle": "default",
+				"navigationBarTitleText": "设置代理",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"width": "90",
+							"text": "%setProxy.addProxy%",
+							"type": "none",
+							"color": "rgb(251,29,84)",
+							"background": "#000000",
+							"fontSize": "16px",
+							"float": "right"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/gather/mainland/video",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/gather/mainland/signIn/signIn",
+			"style": {
+				"navigationBarTitleText": "签到领宝石",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/gather/mainland/signIn/signRecord",
+			"style": {
+				"navigationBarTitleText": "记录",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/gather/customer/customer",
+			"style": {
+				"navigationBarTitleText": "客服中心",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/general/myInfo/myInfo",
+			"style": {
+				"navigationBarTitleText": "我的信息",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/general/setInviteCode/setInviteCode",
+			"style": {
+				"navigationBarTitleText": "设置邀请码",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/gather/message_borad/message_borad",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/gather/association/echartsTest",
+			"style": {
+				"navigationBarTitleText": "echarts",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/general/userinfo/bind_phone",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/exchange/exchange",
+			"style": {
+				"navigationBarTitleText": "交易所",
+				"navigationBarBackgroundColor": "#363557",
+				"navigationBarTextStyle": "white",
+				"navigationBarLeftArrowColor": "white"
+			}
+		},
+		{
+			"path": "pages/gather/gemList/gemList",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/general/register/register",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/general/userinfo/player_msg",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/general/userinfo/player_msg_detail",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/gather/home/flash_record",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}
+	],
+	"globalStyle": {
+		/*///---- Pages-Tool --  合并自： pages-config/globalStyle.json ----*/
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": " ",
+		"navigationBarBackgroundColor": "#fff",
+		"backgroundColor": "#f5f5f5",
+		"app-plus": {
+			"background": "#f5f5f5"
+		}
+	},
+	"condition": {
+		"current": 0,
+		"list": [{
+			"name": "",
+			"path": "",
+			"query": ""
+		}]
+	},
+	"tabBar": {
+		// "blurEffect": "extralight",
+		"custom": true, //隐藏官方选项卡
+		"color": "#999999",
+		"selectedColor": "#222222",
+		"backgroundColor": "#fff",
+		"borderStyle": "0px",
+		"list": [{
+				"pagePath": "pages/gather/homepage"
+			},
+			{
+				"pagePath": "pages/gather/mainland/index"
+			},
+			{
+				"pagePath": "pages/game/capsuleToys/capsuleToys"
+			},
+			{
+				"pagePath": "pages/gather/association/myGuild/myGuild"
+			},
+			{
+				"pagePath": "pages/gather/home/index"
+			}
+
+		]
+	}
+	// "tabBar": {
+	// 	/*///---- Pages-Tool --  合并自： pages-config/tabBar.json ----*/
+	// 	"color": "#999999",
+	// 	"selectedColor": "#222222",
+	// 	"backgroundColor": "#fff",
+	// 	"fontSize": "11px",
+	// 	"iconWidth": "22px",
+	// 	"borderStyle": "0px",
+	// 	"list": [
+	// 		// {
+	// 		// 	"pagePath": "pages/gather/index",
+	// 		// 	"iconPath": "static/tabbar/q1.png",
+	// 		// 	"selectedIconPath": "static/tabbar/qq1.png",
+	// 		// 	"text": "商城"
+	// 		// },
+	// 		// 潮玩商城
+	// 		{
+	// 			"pagePath": "pages/gather/homepage",
+	// 			"iconPath": "static/tab_current/home.png",
+	// 			"selectedIconPath": "static/tab_active/home_active.png",
+	// 			"text": "%tabbar.tabbar1%"
+
+	// 		},
+
+
+	// 		{
+	// 			"pagePath": "pages/gather/mainland/index",
+	// 			"iconPath": "static/tab_current/card.png",
+	// 			"selectedIconPath": "static/tab_active/card_active.png",
+	// 			"text": "%tabbar.tabbar2%"
+	// 		},
+
+	// 		// {
+	// 		// 	"pagePath": "pages/game/game",
+	// 		// 	"iconPath": "static/tabbar/q3.png",
+	// 		// 	"selectedIconPath": "static/tabbar/qq3.png",
+	// 		// 	"text": "星空扭蛋"
+	// 		// },
+	// 		{
+	// 			"pagePath": "pages/game/capsuleToys/capsuleToys",
+	// 			"iconPath": "static/tab_current/capsule.png",
+	// 			"selectedIconPath": "static/tab_active/capsule_active.png",
+	// 			"text": "%tabbar.tabbar3%"
+	// 		},
+	// 		// {
+	// 		// 	"pagePath": "pages/gather/association/myAssociation/myAssociation",
+	// 		// 	"iconPath": "static/tabbar/q4.png",
+	// 		// 	"selectedIconPath": "static/tabbar/qq4.png",
+	// 		// 	"text": "星空公会"
+	// 		// },
+	// 		{
+	// 			"pagePath": "pages/gather/association/myGuild/myGuild",
+	// 			"iconPath": "static/tab_current/ship.png",
+	// 			"selectedIconPath": "static/tab_active/ship_active.png",
+	// 			"text": "%tabbar.tabbar4%"
+	// 		},
+	// 		{
+	// 			"pagePath": "pages/gather/home/index",
+	// 			"iconPath": "static/tab_current/my.png",
+	// 			"selectedIconPath": "static/tab_active/my_active.png",
+	// 			"text": "%tabbar.tabbar5%"
+	// 		}
+	// 	]
+	// 	// "z-index": 99988
+	// 	// "midButton": {
+	// 	// 	// "text": "游戏",
+	// 	// 	"backgroundImage": "static/tabbar/t5.png",
+	// 	// 	"iconWidth": "22px"
+	// 	// }
+	// }
+}

@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no, viewport-fit=cover" />
+    <title></title>
+
+</head>
+
+<body>
+
+    <div id="geetest_index_loading" style="padding-top: 100px;">
+       
+       <input type="file" accept="" class="file"/>
+    </div>
+   
+    <!-- 此链接位置不要改变，防止上面页面错误catch 不到gt4的错误-->
+    
+    <script src="./js/uni.webview.1.5.2.js"></script> 
+	
+	<script type="text/javascript">
+				let fileDom = document.querySelector(".file");
+				//获得dom元素
+				fileDom.addEventListener('change', (event) => {
+				//监听input变化
+					let file = fileDom.files[0];
+				//获得input选择提交的文件
+					var xhr = new XMLHttpRequest();
+				
+					var formData = new FormData();
+					formData.append('fileDom', file);
+					//将文件加入到formdata中
+					xhr.open('POST', 'http://192.168.0.125:64000//api/doc/DocUploadForApp');
+					//正常请求
+					xhr.setRequestHeader('', '');
+					//自定义header
+					xhr.upload.addEventListener("progress", function(event) {
+						if (event.lengthComputable) {
+							let percent = Math.ceil(event.loaded * 100 / event.total) + "%";
+							//实时监听文件上传的进度
+							
+							//可以使用plus.storage.setItem()本地缓存来和vue页面进行通讯
+							
+						}
+					}, false);
+					xhr.send(formData);
+					xhr.onreadystatechange = function() {
+	
+						if (xhr.readyState == 4 && xhr.status == 200) {
+							console.log(xhr.responseText);
+							
+							location.href = 'index.html';
+	                   //加载完成以后，调用一个页面自跳转，并且可以通过在vue界面调用this.wv.overrideUrlLoading()来截取并阻止这个跳转，达到在vue界面知道上传完成的情况
+						} else {
+							console.log(xhr.statusText);
+						}
+					}
+				}, false);
+			</script>
+   
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+{
+	"dependencies": {
+		"@uni-ui/code-plugs": "^1.8.5",
+		"@uni-ui/code-ui": "^1.3.9",
+		"@uni-ui/nvue-canvas-plugs": "^1.0.0",
+		"@wxcloud/cloud-sdk": "^1.0.4",
+		"axios": "^1.6.2",
+		"crypto-js": "^4.2.0",
+		"decimal.js": "^10.4.3",
+		"echarts": "^5.5.0",
+		"html2canvas": "^1.4.1",
+		"lodash": "^4.17.21",
+		"md5": "^2.3.0",
+		"qs": "^6.11.2",
+		"three": "^0.160.1",
+		"uview-ui": "^2.0.36",
+		"vue-clipboard2": "^0.3.3",
+		"vue-count-to": "^1.0.13",
+		"vue-i18n": "^9.6.5"
+	},
+	"devDependencies": {
+		"vue-particles": "^1.0.9"
+	}
+}

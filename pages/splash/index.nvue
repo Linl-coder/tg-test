@@ -1,0 +1,206 @@
+<template>
+	<view class="index flex-center" :style="h">
+		<!-- <swiper :render-whole="true" @change="change_" :indicator-dots="true" :duration="1000" :style="h" v-if="is_swiper==1">
+			<swiper-item>
+				<view class="swiper-item">
+					<image src="../../static/splash/1.png" :style="h"></image>
+				</view>
+			</swiper-item>
+			<swiper-item>
+				<view class="swiper-item">
+					<image src="../../static/splash/2.png" :style="h"></image>
+				</view>
+			</swiper-item>
+			<swiper-item>
+				<view class="swiper-item flex-center">
+					<image src="../../static/splash/3.png"  :style="h" @tap="go_index(1)"></image>
+					<div class="btn flex-center" @tap="go_index(1)" >
+						<text class="t">立即体验</text>
+					</div>
+				</view>
+				
+			</swiper-item>
+		</swiper> -->
+
+		<!-- 启动页 -->
+		<image :src="splash_img" :style="h" v-if="is_swiper==2&&open_type==1" mode="heightFix"></image>
+
+		<video :src="splash_img" ref="myvideo" objectFit="cover" :show-center-play-btn="false" @timeupdate="timeupdate"
+			@waiting="waiting" :controls="false" id="myvideo" :style="h" :auto-play="true"
+			v-if="is_swiper==2&&open_type==2"></video>
+
+		<!-- 倒计时 默认5秒-->
+		<view class="time flex-center" v-if="is_swiper==2" @tap="go_index_">
+			<text class="t1">{{time}}s</text>
+			<text class="t1" style="border-left: 1rpx solid #000;">跳过</text>
+		</view>
+	</view>
+</template>
+
+<script>
+	export default {
+		data() {
+			return {
+				time: 3,
+				h: "",
+				is_swiper: 1, //1 首次打开app 2 非首次打开app 
+				currnet: 0,
+				flage: true,
+				splash_img: "",
+				open_type: "",
+				is_video: false
+			}
+		},
+		created() {
+			// this.check_version();
+		},
+		mounted() {
+			// uni.preloadPage({url: "/pages/index/index"});
+		},
+		computed: {
+			is_login() {
+				return this.$store.getters.is_login;
+			},
+			user_info() {
+				return this.$store.getters.get_user_info;
+			}
+		},
+		methods: {
+			timeupdate(e) {
+				if (!this.is_video && e.detail.duration > 0) {
+					this.time = parseInt(e.detail.duration);
+					this.is_video = true;
+					plus.navigator.closeSplashscreen();
+				}
+			},
+			waiting() {
+				this.$refs.myvideo.play();
+			},
+			async check_version() { //版本检查
+				let res = await uni.ajax.getVersion();
+				this.open_type = res.open_type;
+
+				if (res.open_type == 1) {
+					this.splash_img = res.open_image;
+					uni.getImageInfo({
+						src: this.splash_img,
+						success: () => {
+							// #ifdef APP-PLUS
+							plus.navigator.closeSplashscreen();
+							// #endif
+
+							this.init_fn();
+						}
+					})
+				}
+				if (res.open_type == 2) {
+					this.splash_img = res.open_image;
+					this.init_fn();
+				}
+
+			},
+			change_(e) {
+				this.currnet = e.detail.current;
+			},
+			async init_fn() {
+				let is_first = uni.getStorageSync("is_first");
+				is_first = 2;
+				let system = await uni.pro.getSystemInfo();
+				this.h = {
+					'height': system.windowHeight + "px",
+					'width': system.windowWidth + "px"
+				};
+				if (is_first == 2) {
+					this.is_swiper = 2;
+					this.time_fn();
+
+				}
+
+			},
+
+			async go_index(type) { //前往首页
+
+				uni.setStorageSync("is_first", 2);
+				uni.pro.switchTab("index/index");
+				return false;
+				if (type == 1) {
+					this.get_user_info();
+				} else {
+					setTimeout(() => {
+						this.get_user_info();
+					}, 1500)
+				}
+			},
+			time_fn() { //倒计时
+				let time = null;
+				time = setInterval(() => {
+					if (this.time <= 1) {
+						clearInterval(time);
+						if (this.flage) {
+							this.go_index(1);
+						}
+					} else {
+						this.time = this.time - 1;
+					}
+				}, 1000);
+			},
+			go_index_() {
+				this.flage = false;
+				uni.pro.switchTab("index/index");
+			},
+			async get_user_info() {
+				let res = await uni.ajax.get_user_info();
+				if (res) {
+					uni.setStorageSync("user_info", res);
+					this.$store.commit('set_login', true);
+					this.$store.commit("set_user_info", res);
+					if (!this.flage) {
+						return false;
+					}
+					uni.pro.switchTab("index/index");
+				} else {
+					if (!this.flage) {
+						return false;
+					}
+					uni.pro.redirectTo("general/login");
+				}
+			}
+		}
+	}
+</script>
+
+<style lang="scss">
+	.time {
+		position: absolute;
+		width: 160rpx;
+		height: 60rpx;
+		border-radius: 30rpx;
+		background-color: #fff;
+		top: 60rpx;
+		right: 30rpx;
+
+		.t1 {
+			flex: 1;
+			text-align: center;
+			font-size: 28rpx;
+		}
+	}
+
+	.index {
+		.btn {
+			position: absolute;
+			bottom: 100rpx;
+			width: 310rpx;
+			height: 88rpx;
+			border-radius: 48rpx;
+			background: #FA2D1A;
+
+			.t {
+				font-size: 32rpx;
+				font-family: PingFang SC-Regular, PingFang SC;
+				font-weight: 400;
+				color: #FFFFFF;
+			}
+		}
+	}
+</style>

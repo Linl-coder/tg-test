@@ -1,0 +1,228 @@
+{
+    "name" : "JJhub",
+    "appid" : "__UNI__4E5130A",
+    "description" : "A convenient shopping app with the latest fashion styles!",
+    "versionName" : "0.3.2",
+    "versionCode" : 10432,
+    "transformPx" : false,
+    /* 5+App特有相关 */
+    "app-plus" : {
+        "usingComponents" : true,
+        "nvueStyleCompiler" : "uni-app",
+        "compilerVersion" : 3,
+        "permission" : {
+            "scope" : "webview",
+            "webview" : {
+                "domains" : [ "https://t5.yespay.bet/index.html" ]
+            }
+        },
+        "safearea" : {
+            "bottom" : {
+                "offset" : "none"
+            }
+        },
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : false,
+            "waiting" : false,
+            "autoclose" : false,
+            "delay" : 0
+        },
+        /* 模块配置 */
+        "modules" : {
+            "Camera" : {},
+            "VideoPlayer" : {}
+        },
+        "compatible" : {
+            "ignoreVersion" : true //true表示忽略版本检查提示框，HBuilderX1.9.0及以上版本支持  
+        },
+        /* 应用发布信息 */
+        "distribute" : {
+            "distribute" : {
+                "orientation" : [ "portrait-primary" ] //重力感应、横竖屏配置
+            },
+            /* android打包配置 */
+            "android" : {
+                "permissions" : [
+                    "<uses-feature android:name=\"android.hardware.camera\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+                    "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+                    "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>"
+                ],
+                "abiFilters" : [ "armeabi-v7a", "arm64-v8a", "x86" ],
+                "minSdkVersion" : 21,
+                "targetSdkVersion" : 31
+            },
+            /* ios打包配置 */
+            "ios" : {
+                "dSYMs" : false,
+                "privacyDescription" : {
+                    "NSPhotoLibraryUsageDescription" : "Select images from the album as avatars",
+                    "NSCameraUsageDescription" : "Using a camera to take photos as avatars",
+                    "NSPhotoLibraryAddUsageDescription" : "Store photos in an album"
+                }
+            },
+            /* SDK配置 */
+            "sdkConfigs" : {
+                "oauth" : {},
+                "ad" : {},
+                "geolocation" : {
+                    "amap" : {
+                        "__platform__" : [ "android" ],
+                        "appkey_ios" : "d1811f7d7c07b99a99b561a80193f085",
+                        "appkey_android" : "d1811f7d7c07b99a99b561a80193f085"
+                    }
+                },
+                "maps" : {
+                    "amap" : {
+                        "appkey_ios" : "d1811f7d7c07b99a99b561a80193f085",
+                        "appkey_android" : "d1811f7d7c07b99a99b561a80193f085"
+                    }
+                }
+            },
+            "splashscreen" : {
+                "androidStyle" : "default",
+                "android" : {
+                    "hdpi" : "static/else/start.png",
+                    "xhdpi" : "static/else/start.png",
+                    "xxhdpi" : "static/else/start.png"
+                },
+                "useOriginalMsgbox" : false,
+                "iosStyle" : "storyboard",
+                "ios" : {
+                    "storyboard" : "C:/Users/admin/Desktop/pte_resource2/CustomStoryboard/CustomStoryboard/CustomStoryboard.zip"
+                }
+            },
+            "icons" : {
+                "android" : {
+                    "hdpi" : "unpackage/res/icons/72x72.png",
+                    "xhdpi" : "unpackage/res/icons/96x96.png",
+                    "xxhdpi" : "unpackage/res/icons/144x144.png",
+                    "xxxhdpi" : "unpackage/res/icons/192x192.png"
+                },
+                "ios" : {
+                    "appstore" : "unpackage/res/icons/1024x1024.png",
+                    "ipad" : {
+                        "app" : "unpackage/res/icons/76x76.png",
+                        "app@2x" : "unpackage/res/icons/152x152.png",
+                        "notification" : "unpackage/res/icons/20x20.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "proapp@2x" : "unpackage/res/icons/167x167.png",
+                        "settings" : "unpackage/res/icons/29x29.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "spotlight" : "unpackage/res/icons/40x40.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png"
+                    },
+                    "iphone" : {
+                        "app@2x" : "unpackage/res/icons/120x120.png",
+                        "app@3x" : "unpackage/res/icons/180x180.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "notification@3x" : "unpackage/res/icons/60x60.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "settings@3x" : "unpackage/res/icons/87x87.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png",
+                        "spotlight@3x" : "unpackage/res/icons/120x120.png"
+                    }
+                }
+            }
+        },
+        "uniStatistics" : {
+            "enable" : true
+        },
+        "nvueLaunchMode" : "",
+        "nativePlugins" : {
+            "MyLibraryPlugin" : {
+                "__plugin_info__" : {
+                    "name" : "MyLibraryPlugin",
+                    "description" : "uniapp原生android插件",
+                    "platforms" : "Android",
+                    "url" : "",
+                    "android_package_name" : "",
+                    "ios_bundle_id" : "",
+                    "isCloud" : false,
+                    "bought" : -1,
+                    "pid" : "",
+                    "parameters" : {}
+                }
+            }
+        }
+    },
+    /* 快应用特有相关 */
+    "quickapp" : {},
+    /* 小程序特有相关 */
+    "mp-weixin" : {
+        "appid" : "",
+        "setting" : {
+            "urlCheck" : false
+        },
+        "usingComponents" : true
+    },
+    "mp-alipay" : {
+        "usingComponents" : true
+    },
+    "mp-baidu" : {
+        "usingComponents" : true
+    },
+    "mp-toutiao" : {
+        "usingComponents" : true
+    },
+    "uniStatistics" : {
+        "enable" : false
+    },
+    /* h5特有相关 */
+    "h5" : {
+        "devServer" : {
+            "https" : false,
+            "port" : 8002, //端口号
+            "disableHostCheck" : true,
+            "proxy" : {
+                "/api2" : {
+                    // "target" : "http://192.168.1.13/", //目标接口域名
+                    //"target": "https://kw.sxqichuangkeji.com/", //目标接口域名
+                    "target" : "https://pay.sunpayonline.xyz/", //目标接口域名
+                    "changeOrigin" : true, //是否跨域
+                    "secure" : false, // 设置支持https协议的代理
+                    "pathRewrite" : {
+                        "^/api2" : "" //需要rewrite重写的,
+                    }
+                },
+                "/api" : {
+                    // "target" : "http://192.168.1.13/", //目标接口域名
+                    //"target": "https://kw.sxqichuangkeji.com/", //目标接口域名
+                    "target" : "https://space.yygogogo.com/", //目标接口域名
+                    "changeOrigin" : true, //是否跨域
+                    "secure" : false, // 设置支持https协议的代理
+                    "pathRewrite" : {
+                        "^/api" : "" //需要rewrite重写的,
+                    }
+                }
+            }
+        },
+        "router" : {
+            "base" : "./"
+        },
+        "optimization" : {
+            "treeShaking" : {
+                "enable" : true
+            }
+        },
+        "title" : " ",
+        "template" : "index.html",
+        "sdkConfigs" : {
+            "maps" : {
+                "amap" : {
+                    "key" : "1aaba68c142ef559b2e352725fb8db3d",
+                    "securityJsCode" : "390593e288665d247fa01c3784ccee49",
+                    //"serviceHost": "https://kuwan.sxqichuangkeji.com/_AMapService"
+                    "serviceHost" : "https://space.yygogogo.com/_AMapService"
+                }
+            }
+        }
+    },
+    "vueVersion" : "2",
+    "locale" : "en"
+}
